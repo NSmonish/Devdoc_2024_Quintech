@@ -10,10 +10,12 @@
             margin: 0;
             display: flex;
             flex-direction: column;
+            background-color: #73ccd0;
         }
         header {
             font-size: larger;
             font-weight: 800;
+            background-color: white;
         }
         .topnav {
             display: flex;
@@ -27,10 +29,59 @@
             padding: 15px;
             color: #111;
         }
+        form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fee252;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color:#F1EF99;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus {
+    background-color: #F1EF99;
+}
+
+input[type="submit"] {
+    background-color: #F1EF99;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.qn{
+    padding-bottom: 30px;
+}
     </style>
 </head>
 <body>
-
         <header>
             <div class="container">
                 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -56,9 +107,29 @@
           <section class="writeup">
             <p>Embarking on a journey towards improved mental well-being begins with understanding where you currently stand. At Inner Compass, we offer confidential assessments designed to provide insight into your mental health and help you chart a path towards greater wellness. Our assessments are carefully crafted to respect your privacy and confidentiality while providing valuable insights that can guide you on your journey. Whether you're exploring therapy options, seeking to understand your current mental state, or simply curious about areas for potential growth, our assessments are here to support you every step of the way. Take the first step towards a brighter future by embarking on a confidential assessment journey with Inner Compass today.</p>
           </section>
-    <footer>
+          <section class="qn">
+            <form>
+        
+                <label for="q1">1.Yesterday, Today, Tomorrow are all relative. Enlighten me on where I am currently? </label><br/>
+                <input type="date" placeholder="dd/mm/yy" id="q1"><br/>
+        
+                <label for="q2">2.Hold on is it still Sunday or am I dreaming? What's the day today?</label><br/>
+                <input type="text" placeholder="day" id="q2"><br/>
+
+                <label for="q3">3.Time to test your temporal prowess! Can you tell me what time it is? Tick-tock, make your guess!</label><br/>
+                <input type="time" placeholder="time" id="q3"><br/>
+
+                <label for="q4">4.What would you like to do today? </label><br/>
+                <input type="text" placeholder="Activities" id="q4"><br/>
+
+                <label for="q5">5.Imagine a vast library of information, constantly buzzing with potential for discovery. That's kind of how I feel-energized by the chance to learn and create something new with every interaction. How are you feeling today? </label><br/>
+                <input type="text" placeholder="Mood " id="q5">   
+                <input type="submit" value="Submit">     
+            </form>
+          </section>
+    <footer style="background-color: white;">
             <div class="container">
-                <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" >
                   <div class="col mb-3">
                     <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
