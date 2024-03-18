@@ -13,19 +13,6 @@
             background-color:white ;
             
         }
-        .topnav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            text-decoration: none;
-            background-color: white;
-        }
-        .topnav>a {
-            background-color: white;
-            padding: 15px;
-            color: #111;
-        }
         * {
   font-size: 1.3vw;
   font-family: "Epilogue", sans-serif;
@@ -45,7 +32,6 @@ body .card {
   background-color: white;
   margin-left: 30vw;
   margin-top: 5vw;
-  box-shadow: 2vw 2vw 12vw 3vw #ccc;
 }
 body .card #header {
   height: 5vw;
@@ -165,29 +151,30 @@ body .card .send .circle i {
                 </a>
               </div>
               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2" style="color: #111;">HOME</a></li>
-                <li><a href="#" class="nav-link px-2" style="color: #111;">ASSESSMENTS</a></li>
-                <li><a href="#" class="nav-link px-2" style="color: #111;">THERAPY</a></li>
-                <li><a href="#" class="nav-link px-2" style="color: #111;">COMMUNITY CONNECT</a></li>
-                <li><a href="#" class="nav-link px-2" style="color: #111;">RESOURCES</a></li>
+                <li><a href="./index.html" class="nav-link px-2" style="color: #111;">HOME</a></li>
+                <li><a href="./assessments.html" class="nav-link px-2" style="color: #111;">ASSESSMENTS</a></li>
+                <li><a href="./therapy.html" class="nav-link px-2" style="color: #111;">THERAPY</a></li>
+                <li><a href="./community.html" class="nav-link px-2" style="color: #111;">COMMUNITY CONNECT</a></li>
+                <li><a href="./resource.html" class="nav-link px-2" style="color: #111;">RESOURCES</a></li>
               </ul>
               <div class="col-md-1 text-end">
-                <img src="./Images/user.gif" width="70">
+                <a href="./profile.html"><img src="./Images/user.gif" width="70"></a>
               </div>
             </header>
           </div>
     </header>
 
-    <section class="writeup">
-            <p>Welcome to Community Connect, the heart of Inner Compass where support, understanding, and growth intersect in a safe and inclusive space. Our platform is more than just a community—it's a lifeline where individuals from all walks of life come together to share experiences, seek guidance, and find solace in knowing they're not alone. Here, comfort zones expand as we encourage each other to step into new territory, supported by the comforting presence of chatbots offering immediate assistance and guidance. Anonymity is respected, ensuring everyone feels comfortable engaging in discussions and seeking support. Join us in building a community where every voice is heard, every journey is respected, and together, we find strength, support, and solidarity on the path to healing and growth. Welcome to Community Connect—your sanctuary in the digital world.</p>
+    <section class="container writeup">
+        <h1 style="color: white; text-shadow: 2px 2px #111;">COMMUNITY CONNECT</h1>
+        <p style="font-weight: 600; text-align: justify;">Welcome to Community Connect, the heart of Inner Compass where support, understanding, and growth intersect in a safe and inclusive space. Our platform is more than just a community—it's a lifeline where individuals from all walks of life come together to share experiences, seek guidance, and find solace in knowing they're not alone. Here, comfort zones expand as we encourage each other to step into new territory, supported by the comforting presence of chatbots offering immediate assistance and guidance. Anonymity is respected, ensuring everyone feels comfortable engaging in discussions and seeking support. Join us in building a community where every voice is heard, every journey is respected, and together, we find strength, support, and solidarity on the path to healing and growth. Welcome to Community Connect—your sanctuary in the digital world.</p>
     </section>
     <section class="chatbot">
         <div class="card">
             <div id="header">
-              <h1>Chatter box!</h1>
+              <h1>Chat bot!</h1>
             </div>
             <div id="message-section">
-              <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+              <div class="message" id="bot"><span id="bot-response">Hello.. How are you feeling? ...</span></div>
             </div>
             <div id="input-section">
               <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
