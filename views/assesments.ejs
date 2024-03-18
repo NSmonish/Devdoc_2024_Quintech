@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONFIDENTIAL ASSESMENTS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #73ccd0;
+      }
+      header {
+        font-size: larger;
+        font-weight: 800;
+        background-color: white;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fee252;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+        color: #333;
+      }
+
+      input[type="date"],
+      input[type="time"],
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f1ef99;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="date"]:focus,
+      input[type="time"]:focus,
+      input[type="text"]:focus {
+        background-color: #f1ef99;
+      }
+
+      input[type="submit"] {
+        background-color: #f1ef99;
+        color: black;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .qn {
+        padding-bottom: 30px;
+      }
+      .writeup h1,
+      .qn h1 {
+        color: white;
+        text-shadow: 2px 2px #111;
+      }
+      .lead {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+        >
+          <div class="col-md-1 mb-2 mb-md-0">
+            <a
+              href="/"
+              class="d-inline-flex link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="/Images/logo-for-mental-health-include-compass (1).jpeg"
+                width="50"
+              />
+            </a>
+          </div>
+          <ul
+            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="home" class="nav-link px-2" style="color: #111">HOME</a>
+            </li>
+            <li>
+              <a href="assessments" class="nav-link px-2" style="color: #111"
+                >ASSESSMENTS</a
+              >
+            </li>
+            <li>
+              <a href="therapy" class="nav-link px-2" style="color: #111"
+                >THERAPY</a
+              >
+            </li>
+            <li>
+              <a href="community" class="nav-link px-2" style="color: #111"
+                >COMMUNITY CONNECT</a
+              >
+            </li>
+            <li>
+              <a href="resource" class="nav-link px-2" style="color: #111"
+                >RESOURCES</a
+              >
+            </li>
+          </ul>
+          <div class="col-md-1 text-end">
+            <a href="profile"><img src="/Images/user.gif" width="70" /></a>
+          </div>
+        </header>
+      </div>
+    </header>
+    <div class="container">
+      <section class="writeup">
+        <div class="container col-xxl-12 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="/Images/mental-health-illustration_634548677.jpg"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">
+                Confidential Assessments
+              </h1>
+              <p class="lead">
+                Embarking on a journey towards improved mental well-being begins
+                with understanding where you currently stand. At Inner Compass,
+                we offer confidential assessments designed to provide insight
+                into your mental health and help you chart a path towards
+                greater wellness. Our assessments are carefully crafted to
+                respect your privacy and confidentiality while providing
+                valuable insights that can guide you on your journey. Whether
+                you're exploring therapy options, seeking to understand your
+                current mental state, or simply curious about areas for
+                potential growth, our assessments are here to support you every
+                step of the way. Take the first step towards a brighter future
+                by embarking on a confidential assessment journey with Inner
+                Compass today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="qn">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Daily Review</h1>
+        <p class="lead">
+          Embark on your journey to self-discovery and well-being! Dive into our
+          assessment and uncover insights to guide your journey.
+        </p>
+        <form method="post" action="/assesments">
+          <label for="q2"
+            >1.Hold on is it still Sunday or am I dreaming? What's the day
+            today?</label
+          ><br />
+          <input type="text" placeholder="Monday" id="q2" name="day" /><br />
+
+          <label for="q3"
+            >2.Time to test your temporal prowess! Can you tell me what time it
+            is? Tick-tock, make your guess!</label
+          ><br />
+          <input type="text" placeholder="Morning" id="q3" name="time" /><br />
+
+          <label for="q4">3.What would you like to do today? </label><br />
+          <input
+            type="text"
+            placeholder="Activities"
+            id="q4"
+            name="activity"
+          /><br />
+
+          <label for="q5"
+            >4.Imagine a vast library of information, constantly buzzing with
+            potential for discovery. That's kind of how I feel-energized by the
+            chance to learn and create something new with every interaction. How
+            are you feeling today? </label
+          ><br />
+          <input type="text" placeholder="Mood " id="q5" name="mood" />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+    <footer style="background-color: white">
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-body-secondary">
+              © 2024 Inner Compass. All rights reserved.<br />
+              Privacy Policy | Terms of Service | Contact Us
+            </p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Join Our Community</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Sign up for our newsletter to receive updates, resources, and
+                inspiration straight to your inbox.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Follow Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Connect with us on social media for daily tips, affirmations,
+                and community engagement.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Get Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                If you're in crisis or need immediate support, please reach out
+                to emergency services or helplines in your area.
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

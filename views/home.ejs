@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        font-size: larger;
+        font-weight: 800;
+      }
+      .landing {
+        background-color: #fee252;
+      }
+      .landing h1 {
+        color: white;
+        text-shadow: 2px 2px #111;
+      }
+      .about_us {
+        background-color: #f24f46;
+        color: white;
+      }
+      .services {
+        background-color: #43ccb8;
+        color: #111;
+      }
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+        background-color: white !important;
+      }
+      .clients {
+        background-color: #fee252;
+      }
+      .clients .card.one {
+        background: url("/Images/sarah.avif");
+        background-size: cover;
+        background-position: center;
+      }
+      .clients .card.two {
+        background: url("/Images/john.webp");
+        background-size: cover;
+        background-position: center;
+      }
+      .clients .card.three {
+        background: url("/Images/michael.avif");
+        background-size: cover;
+        background-position: center;
+      }
+      .our_team {
+        background-color: #43ccb8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+        >
+          <div class="col-md-1 mb-2 mb-md-0">
+            <a
+              href="/"
+              class="d-inline-flex link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="/Images/logo-for-mental-health-include-compass (1).jpeg"
+                width="50"
+              />
+            </a>
+          </div>
+          <ul
+            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="home" class="nav-link px-2" style="color: #111"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="assesments" class="nav-link px-2" style="color: #111"
+                >ASSESSMENTS</a
+              >
+            </li>
+            <li>
+              <a href="therapy" class="nav-link px-2" style="color: #111"
+                >THERAPY</a
+              >
+            </li>
+            <li>
+              <a href="community" class="nav-link px-2" style="color: #111"
+                >COMMUNITY CONNECT</a
+              >
+            </li>
+            <li>
+              <a href="selfhelp" class="nav-link px-2" style="color: #111"
+                >RESOURCES</a
+              >
+            </li>
+          </ul>
+          <div class="col-md-1 text-end">
+            <a href="profile"><img src="/Images/user.gif" width="70" /></a>
+          </div>
+        </header>
+      </div>
+    </header>
+    <section class="landing">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="/Images/mental-health-care-sketch-diagram.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              INNER <span style="color: #0d9276">COMPASS</span>: Your Path To
+              Wellness
+            </h1>
+            <p class="lead">
+              Chart your course to mental wellness with Inner Compass.
+              Personalized support, community connections, and curated
+              resources—all in one place. Let's journey together.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="signup"
+                ><button type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                  Sign Up
+                </button></a
+              >
+              <a href="login"
+                ><button type="button" class="btn btn-outline-dark btn-lg px-4">
+                  Login
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about_us">
+      <div class="px-4 pt-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">ABOUT US</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4" style="text-align: justify">
+            Welcome to Inner Compass! We're not just a web application; we're
+            your trusted companion on your mental health journey. With us, you
+            can connect with licensed professionals, dive into supportive peer
+            communities, and explore a wealth of educational resources—all
+            tailored to your needs. Our platform is designed to be safe,
+            inclusive, and easy to navigate, ensuring that everyone feels
+            welcome and supported. Let's navigate this journey together,
+            breaking down barriers and prioritizing mental well-being, one step
+            at a time. Join us, and let's embark on this empowering adventure
+            together!
+          </p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="/Images/aboutusimg.png"
+              class="img-fluid border rounded-3 shadow-lg mb-4"
+              alt="Example image"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container px-4 py-5" id="featured-3">
+        <h1 class="pb-2 border-bottom fw-bold">SERVICES</h1>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/top-file.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Confidential Assessments</h3>
+            <p>
+              Take control of your mental well-being with our confidential
+              assessment tool. Monitor your progress and gain insights into your
+              mental health journey.
+            </p>
+            <a href="assesments" class="icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/presentation.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Online Therapy Sessions</h3>
+            <p>
+              Connect with qualified therapists directly through our platform
+              for personalized online therapy sessions. Additionally, access a
+              library of recorded therapy videos for continuous support whenever
+              you need it.
+            </p>
+            <a href="therapy" class="icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/overpopulation.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Community Connect</h3>
+            <p>
+              Step into our supportive community for meaningful connections.
+              Whether in recovery or seeking understanding, our platform offers
+              a safe space with chatbot support for added comfort and anonymity.
+            </p>
+            <a href="community" class="icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/audio.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Self-Help Resources</h3>
+            <p>
+              Dive into a wealth of curated content including soothing music,
+              self-help videos, art therapy, and mindfulness practices. We help
+              you discover the perfect resources to support your mental
+              well-being journey.
+            </p>
+            <a href="selfhelp"icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/fortune-cookie.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Hope Fortune Cookie</h3>
+            <p>
+              Receive daily doses of positivity and inspiration with our Hope
+              Fortune Cookie feature. Store your favorite affirmations and
+              quotes to uplift your spirits whenever you need a boost.
+            </p>
+            <a href="profile" class="icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+            >
+              <img src="/Images/dog.gif" width="50px" />
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Virtual Pet Companions</h3>
+            <p>
+              Nurture and interact with adorable virtual pet companions to
+              alleviate stress and loneliness. These virtual buddies offer
+              companionship and comfort, making your mental health journey a
+              little brighter.
+            </p>
+            <a href="profile" class="icon-link">
+              Know More >
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">CLIENTS</h2>
+        <p>
+          At Inner Compass, we cater to individuals from all walks of life who
+          are committed to prioritizing their mental health and well-being. Our
+          target audience includes:
+        </p>
+        <ul>
+          <li>
+            Individuals looking for convenient and accessible access to
+            qualified therapists for personalized support and guidance.
+          </li>
+          <li>
+            Those seeking connection and understanding through peer interactions
+            within a supportive online community.
+          </li>
+          <li>
+            Individuals experiencing acute distress or seeking immediate
+            assistance during moments of crisis, including those dealing with
+            suicidal thoughts.
+          </li>
+          <li>
+            Individuals interested in exploring and utilizing curated resources
+            for mindfulness, personal growth, and self-improvement.
+          </li>
+        </ul>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div
+              class="card one card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  "Found solace and support through online therapy sessions
+                  during challenging times"
+                </h5>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>England</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card two card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  "Experienced the power of community connection through our
+                  platform's peer interaction features"
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>India</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card three card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  "Received immediate assistance from our crisis intervention
+                  support team during acute distress"
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_team">
+      <div class="container marketing my-5">
+        <h2 class="pb-2 border-bottom">OUR TEAM</h2>
+        <p class="lead">
+          At Inner Compass, our team is comprised of dedicated individuals
+          passionate about revolutionizing mental healthcare and supporting
+          individuals on their journey to wellness. Meet the faces behind our
+          mission:
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">Shreyashi Deb Roy</h2>
+            <p>
+              With over two decades of experience in psychology and mental
+              health advocacy, she leads our team with compassion and expertise.
+              Her vision for Inner Compass drives our commitment to providing
+              accessible and innovative mental health support worldwide.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">Ashika S S</h2>
+            <p>
+              Her expertise in software engineering and data science fuels the
+              technological innovations that power Inner Compass. He is
+              committed to leveraging technology to break down barriers and
+              improve access to mental healthcare for all.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">Arthy S</h2>
+            <p>
+              Her background in content creation and mental health advocacy
+              drives the development of our curated resources and partnerships.
+              She is passionate about providing meaningful and empowering
+              content to support users on their mental health journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-body-secondary">
+              © 2024 Inner Compass. All rights reserved.<br />
+              Privacy Policy | Terms of Service | Contact Us
+            </p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Join Our Community</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Sign up for our newsletter to receive updates, resources, and
+                inspiration straight to your inbox.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Follow Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Connect with us on social media for daily tips, affirmations,
+                and community engagement.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Get Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                If you're in crisis or need immediate support, please reach out
+                to emergency services or helplines in your area.
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
+  </body>
+</html>
