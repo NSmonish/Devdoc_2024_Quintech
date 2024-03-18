@@ -5,7 +5,6 @@ const collection = require("./config");
 const bodyParser = require("body-parser");
 const { spawn } = require("child_process");
 const app = express();
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -14,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
   res.render("login");
 });
 
@@ -92,10 +91,8 @@ app.post("/login", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-app.get("/predict", (req, res) => {
-  res.render("predict");
-});
-app.post("/predict", (req, res) => {
+
+app.post("/assesments", (req, res) => {
   const data = {
     day: req.body.day,
     time: req.body.time,
@@ -123,7 +120,33 @@ app.post("/predict", (req, res) => {
   });
 });
 
-app.post("/schedule", async (req, res) => {
+const nodemailer = require("nodemailer");
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "sankararthy99@gmail.com",
+    pass: "boyk onth begp zdjb",
+  },
+});
+
+function generateGoogleMeetLink() {
+  const meetLink = `https://meet.google.com/${generateRandomString()}`;
+  return meetLink;
+}
+
+function generateRandomString(length = 10) {
+  const characters =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let randomString = "";
+  for (let i = 0; i < length; i++) {
+    randomString += characters.charAt(
+      Math.floor(Math.random() * characters.length)
+    );
+  }
+  return randomString;
+}
+
+app.post("/therapy", async (req, res) => {
   const { name, date, slot } = req.body;
 
   if (!name || !date || !slot) {
@@ -148,9 +171,41 @@ app.post("/schedule", async (req, res) => {
         date,
         slot,
         availability: false,
+        email_id: "arthy.2022@vitstudent.ac.in",
       });
 
       await newTherapist.save();
+
+      const meetLink = generateGoogleMeetLink();
+
+      const therapistEmail = await collection.TherapistModel.findOne({
+        name,
+        date,
+        slot,
+      }).select("email_id");
+
+      const mailOptions = {
+        from: "sankararthy99@gmail.com",
+        to: therapistEmail,
+        subject: "Appointment Booking Confirmation",
+        text: `Dear Therapist,
+
+Your appointment has been successfully booked for ${date} at slot ${slot}.
+Please join the Google Meet using the following link:
+${meetLink}
+
+Best regards,
+Your App`,
+      };
+
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.error("Error sending email:", error);
+        } else {
+          console.log("Email sent:", info.response);
+        }
+      });
+
       console.log(
         `Therapist ${name} is available on ${date} at slot ${slot}. Booking confirmed!`
       );

@@ -20,18 +20,6 @@
         font-size: larger;
         font-weight: 800;
       }
-      .topnav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        text-decoration: none;
-      }
-      .topnav > a {
-        background-color: #f2e4c9;
-        padding: 15px;
-        color: #111;
-      }
       .landing {
         background-color: #fee252;
       }
@@ -54,11 +42,25 @@
         background-color: white !important;
       }
       .clients {
-        background-color: #73ccd0;
+        background-color: #fee252;
       }
-      footer {
-        background-color: #111;
-        color: white;
+      .clients .card.one {
+        background: url("/Images/sarah.avif");
+        background-size: cover;
+        background-position: center;
+      }
+      .clients .card.two {
+        background: url("/Images/john.webp");
+        background-size: cover;
+        background-position: center;
+      }
+      .clients .card.three {
+        background: url("/Images/michael.avif");
+        background-size: cover;
+        background-position: center;
+      }
+      .our_team {
+        background-color: #43ccb8;
       }
     </style>
   </head>
@@ -74,7 +76,7 @@
               class="d-inline-flex link-body-emphasis text-decoration-none"
             >
               <img
-                src="./Images/logo-for-mental-health-include-compass (1).jpeg"
+                src="/Images/logo-for-mental-health-include-compass (1).jpeg"
                 width="50"
               />
             </a>
@@ -83,22 +85,22 @@
             class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
           >
             <li>
-              <a href="home.ejs" class="nav-link px-2" style="color: #111"
+              <a href="home" class="nav-link px-2" style="color: #111"
                 >HOME</a
               >
             </li>
             <li>
-              <a href="assesments.ejs" class="nav-link px-2" style="color: #111"
+              <a href="assesments" class="nav-link px-2" style="color: #111"
                 >ASSESSMENTS</a
               >
             </li>
             <li>
-              <a href="therapy.ejs" class="nav-link px-2" style="color: #111"
+              <a href="therapy" class="nav-link px-2" style="color: #111"
                 >THERAPY</a
               >
             </li>
             <li>
-              <a href="community.ejs" class="nav-link px-2" style="color: #111"
+              <a href="community" class="nav-link px-2" style="color: #111"
                 >COMMUNITY CONNECT</a
               >
             </li>
@@ -109,7 +111,7 @@
             </li>
           </ul>
           <div class="col-md-1 text-end">
-            <img src="./Images/user.gif" width="70" />
+            <a href="profile"><img src="/Images/user.gif" width="70" /></a>
           </div>
         </header>
       </div>
@@ -119,7 +121,7 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
-              src="./Images/mental-health-care-sketch-diagram.jpg"
+              src="/Images/mental-health-care-sketch-diagram.jpg"
               class="d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
               width="700"
@@ -138,12 +140,16 @@
               resources—all in one place. Let's journey together.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">
-                Sign Up
-              </button>
-              <button type="button" class="btn btn-outline-dark btn-lg px-4">
-                Login
-              </button>
+              <a href="signup"
+                ><button type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                  Sign Up
+                </button></a
+              >
+              <a href="login"
+                ><button type="button" class="btn btn-outline-dark btn-lg px-4">
+                  Login
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -169,7 +175,7 @@
         <div class="overflow-hidden" style="max-height: 30vh">
           <div class="container px-5">
             <img
-              src="./Images/about us img.png"
+              src="/Images/aboutusimg.png"
               class="img-fluid border rounded-3 shadow-lg mb-4"
               alt="Example image"
               width="700"
@@ -188,7 +194,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/top-file.gif" width="50px" />
+              <img src="/Images/top-file.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Confidential Assessments</h3>
             <p>
@@ -196,7 +202,7 @@
               assessment tool. Monitor your progress and gain insights into your
               mental health journey.
             </p>
-            <a href="assesments.ejs" class="icon-link">
+            <a href="assesments" class="icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -205,7 +211,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/presentation.gif" width="50px" />
+              <img src="/Images/presentation.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Online Therapy Sessions</h3>
             <p>
@@ -214,7 +220,7 @@
               library of recorded therapy videos for continuous support whenever
               you need it.
             </p>
-            <a href="therapy.ejs" class="icon-link">
+            <a href="therapy" class="icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -223,7 +229,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/overpopulation.gif" width="50px" />
+              <img src="/Images/overpopulation.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Community Connect</h3>
             <p>
@@ -231,7 +237,7 @@
               Whether in recovery or seeking understanding, our platform offers
               a safe space with chatbot support for added comfort and anonymity.
             </p>
-            <a href="community.ejs" class="icon-link">
+            <a href="community" class="icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -242,7 +248,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/audio.gif" width="50px" />
+              <img src="/Images/audio.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Self-Help Resources</h3>
             <p>
@@ -251,7 +257,7 @@
               you discover the perfect resources to support your mental
               well-being journey.
             </p>
-            <a href="selfhelp.ejs" class="icon-link">
+            <a href="selfhelp"icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -260,7 +266,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/fortune-cookie.gif" width="50px" />
+              <img src="/Images/fortune-cookie.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Hope Fortune Cookie</h3>
             <p>
@@ -268,7 +274,7 @@
               Fortune Cookie feature. Store your favorite affirmations and
               quotes to uplift your spirits whenever you need a boost.
             </p>
-            <a href="#" class="icon-link">
+            <a href="profile" class="icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -277,7 +283,7 @@
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
             >
-              <img src="./Images/dog.gif" width="50px" />
+              <img src="/Images/dog.gif" width="50px" />
             </div>
             <h3 class="fs-2 text-body-emphasis">Virtual Pet Companions</h3>
             <p>
@@ -286,7 +292,7 @@
               companionship and comfort, making your mental health journey a
               little brighter.
             </p>
-            <a href="#" class="icon-link">
+            <a href="profile" class="icon-link">
               Know More >
               <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
             </a>
@@ -296,44 +302,49 @@
     </section>
     <section class="clients">
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
-
+        <h2 class="pb-2 border-bottom">CLIENTS</h2>
+        <p>
+          At Inner Compass, we cater to individuals from all walks of life who
+          are committed to prioritizing their mental health and well-being. Our
+          target audience includes:
+        </p>
+        <ul>
+          <li>
+            Individuals looking for convenient and accessible access to
+            qualified therapists for personalized support and guidance.
+          </li>
+          <li>
+            Those seeking connection and understanding through peer interactions
+            within a supportive online community.
+          </li>
+          <li>
+            Individuals experiencing acute distress or seeking immediate
+            assistance during moments of crisis, including those dealing with
+            suicidal thoughts.
+          </li>
+          <li>
+            Individuals interested in exploring and utilizing curated resources
+            for mindfulness, personal growth, and self-improvement.
+          </li>
+        </ul>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
             <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="
-                background-image: url('./Images/sarah.jpeg');
-                background-repeat: none;
-              "
+              class="card one card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             >
               <div
                 class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
               >
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Short title, long jacket
-                </h3>
+                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  "Found solace and support through online therapy sessions
+                  during challenging times"
+                </h5>
                 <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src=""
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em">
                       <use xlink:href="#geo-fill"></use>
                     </svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>3d</small>
+                    <small>England</small>
                   </li>
                 </ul>
               </div>
@@ -342,36 +353,21 @@
 
           <div class="col">
             <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-2.jpg')"
+              class="card two card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             >
               <div
                 class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
               >
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Much longer title that wraps to multiple lines
+                  "Experienced the power of community connection through our
+                  platform's peer interaction features"
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em">
                       <use xlink:href="#geo-fill"></use>
                     </svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>4d</small>
+                    <small>India</small>
                   </li>
                 </ul>
               </div>
@@ -380,34 +376,19 @@
 
           <div class="col">
             <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-3.jpg')"
+              class="card three card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             >
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Another longer title belongs here
+                  "Received immediate assistance from our crisis intervention
+                  support team during acute distress"
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em">
                       <use xlink:href="#geo-fill"></use>
                     </svg>
                     <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>5d</small>
                   </li>
                 </ul>
               </div>
@@ -415,157 +396,151 @@
           </div>
         </div>
       </div>
-      <h2>CLIENTS</h2>
-      <p>
-        At Inner Compass, we cater to individuals from all walks of life who are
-        committed to prioritizing their mental health and well-being. Our target
-        audience includes:
-      </p>
-      <ul>
-        <li>
-          Individuals looking for convenient and accessible access to qualified
-          therapists for personalized support and guidance.
-        </li>
-        <li>
-          Those seeking connection and understanding through peer interactions
-          within a supportive online community.
-        </li>
-        <li>
-          Individuals experiencing acute distress or seeking immediate
-          assistance during moments of crisis, including those dealing with
-          suicidal thoughts.
-        </li>
-        <li>
-          Individuals interested in exploring and utilizing curated resources
-          for mindfulness, personal growth, and self-improvement.
-        </li>
-      </ul>
-      <p>
-        Our clients come from diverse backgrounds and have unique stories and
-        experiences. They include:
-      </p>
-      <p>
-        Sarah: Found solace and support through online therapy sessions during
-        challenging times.<br />
-        John: Experienced the power of community connection and mutual support
-        through our platform's peer interaction features.<br />
-
-        Emily: Utilized our curated self-help resources to manage anxiety and
-        improve overall well-being.<br />
-
-        Michael: Received immediate assistance and guidance from our crisis
-        intervention support team during a moment of acute distress.
-      </p>
     </section>
     <section class="our_team">
-      <p>
-        At Inner Compass, our team is comprised of dedicated individuals
-        passionate about revolutionizing mental healthcare and supporting
-        individuals on their journey to wellness. Meet the faces behind our
-        mission:
-      </p>
-      <ul>
-        <li>
-          Dr. Emily Jones, CEO and Founder: With over two decades of experience
-          in psychology and mental health advocacy, Dr. Jones leads our team
-          with compassion and expertise. Her vision for Inner Compass drives our
-          commitment to providing accessible and innovative mental health
-          support worldwide.
-        </li>
-
-        <li>
-          Sarah Johnson, Head of Community Engagement: Sarah brings her
-          background in social work and community organizing to foster a vibrant
-          and supportive community within Inner Compass. She is dedicated to
-          creating spaces where individuals feel heard, understood, and
-          empowered.
-        </li>
-
-        <li>
-          Michael Chen, Head of Technology: Michael's expertise in software
-          engineering and data science fuels the technological innovations that
-          power Inner Compass. He is committed to leveraging technology to break
-          down barriers and improve access to mental healthcare for all.
-        </li>
-
-        <li>
-          Emily Rodriguez, Head of Content and Partnerships: Emily's background
-          in content creation and mental health advocacy drives the development
-          of our curated resources and partnerships. She is passionate about
-          providing meaningful and empowering content to support users on their
-          mental health journey.
-        </li>
-
-        <li>
-          John Smith, Customer Support Manager: With a background in psychology
-          and customer service, John leads our customer support team with
-          empathy and dedication. He ensures that every user interaction with
-          Inner Compass is positive, supportive, and helpful.
-        </li>
-      </ul>
-      <p>
-        Together, our team is committed to creating a world where mental health
-        support is accessible, inclusive, and empowering for all. Join us on
-        this journey towards a brighter, healthier future.
-      </p>
-    </section>
-
-    <div class="container">
-      <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
-      >
-        <div class="col mb-3">
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
+      <div class="container marketing my-5">
+        <h2 class="pb-2 border-bottom">OUR TEAM</h2>
+        <p class="lead">
+          At Inner Compass, our team is comprised of dedicated individuals
+          passionate about revolutionizing mental healthcare and supporting
+          individuals on their journey to wellness. Meet the faces behind our
+          mission:
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
             </svg>
-          </a>
-          <p class="text-body-secondary">
-            © 2024 Inner Compass. All rights reserved.<br />
-            Privacy Policy | Terms of Service | Contact Us
-          </p>
+            <h2 class="fw-normal">Shreyashi Deb Roy</h2>
+            <p>
+              With over two decades of experience in psychology and mental
+              health advocacy, she leads our team with compassion and expertise.
+              Her vision for Inner Compass drives our commitment to providing
+              accessible and innovative mental health support worldwide.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">Ashika S S</h2>
+            <p>
+              Her expertise in software engineering and data science fuels the
+              technological innovations that power Inner Compass. He is
+              committed to leveraging technology to break down barriers and
+              improve access to mental healthcare for all.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">Arthy S</h2>
+            <p>
+              Her background in content creation and mental health advocacy
+              drives the development of our curated resources and partnerships.
+              She is passionate about providing meaningful and empowering
+              content to support users on their mental health journey.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-body-secondary">
+              © 2024 Inner Compass. All rights reserved.<br />
+              Privacy Policy | Terms of Service | Contact Us
+            </p>
+          </div>
 
-        <div class="col mb-3"></div>
+          <div class="col mb-3"></div>
 
-        <div class="col mb-3">
-          <h5>Join Our Community</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2" style="text-align: justify">
-              Sign up for our newsletter to receive updates, resources, and
-              inspiration straight to your inbox.
-            </li>
-          </ul>
-        </div>
+          <div class="col mb-3">
+            <h5>Join Our Community</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Sign up for our newsletter to receive updates, resources, and
+                inspiration straight to your inbox.
+              </li>
+            </ul>
+          </div>
 
-        <div class="col mb-3">
-          <h5>Follow Us</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2" style="text-align: justify">
-              Connect with us on social media for daily tips, affirmations, and
-              community engagement.
-            </li>
-          </ul>
-        </div>
+          <div class="col mb-3">
+            <h5>Follow Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                Connect with us on social media for daily tips, affirmations,
+                and community engagement.
+              </li>
+            </ul>
+          </div>
 
-        <div class="col mb-3">
-          <h5>Get Help</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2" style="text-align: justify">
-              If you're in crisis or need immediate support, please reach out to
-              emergency services or helplines in your area.
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+          <div class="col mb-3">
+            <h5>Get Help</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2" style="text-align: justify">
+                If you're in crisis or need immediate support, please reach out
+                to emergency services or helplines in your area.
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
   </body>
 </html>
