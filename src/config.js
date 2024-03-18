@@ -25,4 +25,32 @@ const LoginSchema = new mongoose.Schema({
 
 const UserModel = mongoose.model("User", LoginSchema);
 
-module.exports = UserModel;
+const TherapistSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: String,
+    required: true,
+  },
+  slot: {
+    type: Number,
+    required: true,
+  },
+  availability: {
+    type: Boolean,
+    required: true,
+  },
+  email_id: {
+    type: String,
+    required: true,
+  },
+});
+
+const TherapistModel = mongoose.model("Therapist", TherapistSchema);
+
+module.exports = {
+  UserModel: UserModel,
+  TherapistModel: TherapistModel,
+};
