@@ -116,21 +116,31 @@ input[type="submit"]:hover {
             <h1 class="display-5 fw-bold lh-1 mb-3">Daily Review</h1>
             <p class="lead">Embark on your journey to self-discovery and well-being! Dive into our assessment and uncover insights to guide your journey.</p>
             <form>
-                <label for="q1">1.Yesterday, Today, Tomorrow are all relative. Enlighten me on where I am currently? </label><br/>
-                <input type="date" placeholder="dd/mm/yy" id="q1"><br/>
-        
-                <label for="q2">2.Hold on is it still Sunday or am I dreaming? What's the day today?</label><br/>
-                <input type="text" placeholder="Monday" id="q2"><br/>
+                <label for="q2">Hold on is it still Sunday or am I dreaming? What's the day today?</label><br/>
+                <select id="q2" name="q2" style="width: 100%; background-color:#F1EF99 !important">
+                    <option value="Sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
 
-                <label for="q3">3.Time to test your temporal prowess! Can you tell me what time it is? Tick-tock, make your guess!</label><br/>
-                <input type="time" placeholder="morning" id="q3"><br/>
+                <label for="q3">Time to test your temporal prowess! Can you tell me what time it is? Tick-tock, make your guess!</label><br/>
+                <select id="q3" name="q3" style="width: 100%; background-color:#F1EF99 !important">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
 
-                <label for="q4">4.What would you like to do today? </label><br/>
-                <input type="text" placeholder="Activities" id="q4"><br/>
-
-                <label for="q5">5.Imagine a vast library of information, constantly buzzing with potential for discovery. That's kind of how I feel-energized by the chance to learn and create something new with every interaction. How are you feeling today? </label><br/>
+                <label for="q5">Imagine a vast library of information, constantly buzzing with potential for discovery. That's kind of how I feel-energized by the chance to learn and create something new with every interaction. How are you feeling today? </label><br/>
                 <input type="text" placeholder="Mood " id="q5">   
-                <input type="submit" value="Submit">     
+
+                <label for="q4">What would you like to do today? </label><br/>
+                <input type="text" placeholder="Activities" id="q4"><br/> 
+                
+                <input type="submit" value="Submit"> 
             </form>
           </section>
         </div>
